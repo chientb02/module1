@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <style>
+    h1{
+      background-color: red;
+      color:white;
+      font-size: 30px;
+      padding:10px;
+      text-align: center;
+    }
+    p{
+      color: dodgerblue;
+      margin-left: 50px;
+    }
+    form{
+      width:500px;
+      margin-left: auto;
+      margin-right: auto;
+      background-color: aliceblue;
+    }
+    .name{
+      margin-left: 10px;
+      width:200px;
+      height:20px;
+    }
+    .mail{
+      margin-left: 35px;
+      height:20px;
+    }
+    .controls{
+      margin-left: 132px;
+    }
+  </style>
+</head>
+<body>
+
+<form action="">
+  <h1>SỞ THÍCH CỦA BẠN</h1>
+  <p >Họ và tên <input class="name" type="text"  placeholder="Your name"></p>
+  <p>Email <input class="mail" type="text" placeholder="Email" ></p>
+  <p>Sở thích
+      <label style="color:orange; margin-left: 23px;"><input name="hobby"  type="checkbox"/> Thể thao</label>
+      <label style="color:orange ; margin-left: 5px; "><input name="hobby" type="checkbox"/> Âm nhạc</label>
+      <label style="color:orange ; margin-left: 12px;"><input name="hobby" type="checkbox"/> Đọc sách</label> </br>
+      <label style="color:orange ; margin-left: 80px;"><input name="hobby"  type="checkbox"/> Lướt web</label>
+      <label style="color:orange"><input name="hobby" type="checkbox"/> Chơi game</label>
+      <label style="color:orange"><input name="hobby"  type="checkbox"/> Điện ảnh</label> </br>
+      <label style="color:orange ; margin-left: 80px;"><input name="hobby "  type="checkbox"/> Du lịch</label>
+  </p>
+  <div class="controls">
+    <input type="submit" value="Gửi thông tin"/>
+    <input type="reset" value="Nhập lại"/>
+  </div>
+
+</form>
+</body>
+</html>
