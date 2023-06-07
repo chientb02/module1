@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ứng dụng máy tính</title>
+</head>
+<body>
+<h1>Caculator</h1>
+
+<p>
+    <input type="text" id="mb1">
+    <input type="text" id="mb2">
+</p>
+
+<p id="cong"></p>
+<button onclick="calculate('cong', '+')">Addition(+)</button>
+
+<p id="tru"></p>
+<button onclick="calculate('tru', '-')">Subtraction(-)</button>
+
+<p id="nhan"></p>
+<button onclick="calculate('nhan', '*')">Multiplication(x)</button>
+
+<p id="chia"></p>
+<button onclick="calculate('chia', '/')">Division(/)</button>
+
+
+<script>
+    function calculate(elementId, operator) {
+        let inputElement1 = document.getElementById("mb1");
+        let inputElement2 = document.getElementById("mb2");
+        let a = parseFloat(inputElement1.value);
+        let b = parseFloat(inputElement2.value);
+        let result;
+
+        if (operator === '+') {
+            result = a + b;
+        } else if (operator === '-') {
+            result = a - b;
+        } else if (operator === '*') {
+            result = a * b;
+        } else if (operator === '/') {
+            result = a / b;
+        }
+
+        document.getElementById(elementId).innerHTML = "Đáp án là: " + result;
+
+    }
+</script>
+</body>
+</html>
