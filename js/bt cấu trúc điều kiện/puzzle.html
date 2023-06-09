@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+
+<img onclick="changeimg()" id="img" src="img/img puzzle/funny-cat1_part1x1.jpg" height="160" width="800"/>
+<img onclick="changeimg1()" id="img1" src="img/img puzzle/monkey_part2x1.jpg" height="160" width="800"/>
+<img onclick="changeimg2()" id="img2" src="img/img puzzle/funny-cat1_part3x1.jpg" height="160" width="800"/>
+<img onclick="changeimg3()" id="img3" src="img/img puzzle/panda_swap_part4x1.jpg" height="160" width="800"/>
+<img onclick="changeimg4()" id="img4" src="img/img puzzle/monkey_part5x1.jpg" height="160" width="800"/>
+</body>
+<script>
+    var click = 0;
+    var funny =0;
+    var panda =0;
+    var monkey =0;
+
+    function check() {
+        console.log(click)
+        console.log(panda)
+        if (panda === click) {
+            alert("panda");
+        }
+    }
+    function changeimg() {
+        var image = document.getElementById('img');
+        click++;
+        if (click === 1) {
+            image.src = "img/img puzzle/monkey_part1x1.jpg"
+        } else if (click === 2) {
+            image.src = "img/img puzzle/panda_swap_part1x1.jpg"
+            panda++;
+        } else if (click === 3) {
+            image.src = "img/img puzzle/funny-cat1_part1x1.jpg"
+            click = 0;
+
+        }
+        check();
+    }
+
+    function changeimg1() {
+        var image = document.getElementById('img1');
+        click++;
+        if (click === 1) {
+            image.src = "img/img puzzle/monkey_part2x1.jpg"
+        } else if (click === 2) {
+            image.src = "img/img puzzle/panda_swap_part2x1.jpg"
+            panda++;
+        } else if (click === 3) {
+            image.src = "img/img puzzle/funny-cat1_part2x1.jpg"
+            click = 0;
+
+        }
+        check();
+    }
+
+    function changeimg2() {
+        var image = document.getElementById('img2');
+        click++;
+        if (click === 1) {
+            image.src = "img/img puzzle/monkey_part3x1.jpg"
+        } else if (click === 2) {
+            image.src = "img/img puzzle/panda_swap_part3x1.jpg"
+            panda++;
+        } else if (click === 3) {
+            image.src = "img/img puzzle/funny-cat1_part3x1.jpg"
+            click = 0;
+            check()
+        }
+    }
+
+    function changeimg3() {
+        var image = document.getElementById('img3');
+        click++;
+        if (click === 1) {
+            image.src = "img/img puzzle/monkey_part4x1.jpg"
+        } else if (click === 2) {
+            image.src = "img/img puzzle/panda_swap_part4x1.jpg"
+            panda++;
+        } else if (click === 3) {
+            image.src = "img/img puzzle/funny-cat1_part4x1.jpg"
+            click = 0;
+            check()
+        }
+    }
+
+    function changeimg4() {
+        var image = document.getElementById('img4');
+        click++;
+        if (click === 1) {
+            image.src = "img/img puzzle/monkey_part5x1.jpg"
+        } else if (click === 2) {
+            image.src = "img/img puzzle/panda_swap_part5x1.jpg"
+            panda++;
+        } else if (click === 3) {
+            image.src = "img/img puzzle/funny-cat1_part5x1.jpg"
+            click = 0;
+            check()
+        }
+    }
+
+</script>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+</body>
+<script>
+  var a= parseFloat(prompt('Nhập số tiền muốn vay'))
+  var b= parseFloat(prompt('Nhập số tháng vay'))
+  if (b > 12){
+    alert('tiền lãi hàng tháng là:  ' + (a/100*115)/b)
+  } else if (b >6 ) {
+    alert('tiền lãi hàng tháng là:  ' + (a/100*112)/b)
+  }else if (b >3 ) {
+    alert('tiền lãi hàng tháng là:  ' + (a/100*109)/b)
+  }else if (b >=0 ) {
+    alert('tiền lãi hàng tháng là:  ' + (a/100*106)/b)
+  }
+</script>
+</html>

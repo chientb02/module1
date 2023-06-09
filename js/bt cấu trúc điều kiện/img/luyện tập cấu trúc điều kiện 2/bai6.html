@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1> PT bậc 1: ax + b= 0</h1>
+<input type="number" id="a" placeholder="nhập a">
+<input type="number" id="b" placeholder="nhập b">
+<button onclick="result()">Giải pt</button>
+<p id="result"></p>
+</body>
+<script>
+    function result() {
+        var a = document.getElementById('a').value;
+        var b = document.getElementById('b').value;
+        if (a == 0) {
+            document.getElementById('result').innerHTML = 'phương trình vô số nghiệm'
+
+        } else if (a != 0) {
+            document.getElementById('result').innerHTML = 'pt có nghiệm x= ' + (-b / a);
+        }
+
+    }
+</script>
+</html>

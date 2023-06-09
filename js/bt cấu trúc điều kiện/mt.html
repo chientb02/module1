@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Máy tính</title>
+  <style>
+    table{
+      width:150px;
+      height:150px;
+      border: 5px solid blue;
+      text-align: center;
+
+    }
+    td {
+      margin:10px;
+    }
+    input{
+      text-align: end;
+    }
+  </style>
+</head>
+<body>
+<h1>
+  <input type="text" id="ip">
+</h1>
+<table>
+
+
+  <tr>
+    <td>
+      <button value="1" onclick="ip(this.value)" >1</button>
+    </td>
+    <td>
+      <button value="2" onclick="ip(this.value)" >2</button>
+    </td>
+    <td>
+      <button value="3" onclick="ip(this.value)" >3</button>
+    </td>
+    <td>
+      <button value="+" onclick="ip(this.value)" >+</button>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <button value="4" onclick="ip(this.value)" >4</button>
+    </td>
+    <td>
+      <button value="5" onclick="ip(this.value)" >5</button>
+    </td>
+    <td>
+      <button value="6" onclick="ip(this.value)" >6</button>
+    </td>
+    <td>
+      <button value="-" onclick="ip(this.value)" >-</button>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <button value="7" onclick="ip(this.value)" >7</button>
+    </td>
+    <td>
+      <button value="8" onclick="ip(this.value)" >8</button>
+    </td>
+    <td>
+      <button value="9" onclick="ip(this.value)" >9</button>
+    </td>
+    <td>
+      <button value="*" onclick="ip(this.value)" >*</button>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <button value="rs" onclick="rs()" > C</button>
+    </td>
+    <td>
+      <button value="0" onclick="ip(this.value)" >0</button>
+    </td>
+    <td>
+      <button value="result" onclick="result()" >=</button>
+    </td>
+    <td>
+      <button value="/" onclick="ip(this.value)" >/</button>
+    </td>
+  </tr>
+</table>
+</body>
+<script>
+  var a= document.getElementById('ip');
+  function ip(value) {
+      a.value += value
+  }
+  function rs(value) {
+    a.value = ''
+  }
+  function result(value) {
+    var result= eval(a.value)
+    a.value = result
+  }
+</script>
+</html>

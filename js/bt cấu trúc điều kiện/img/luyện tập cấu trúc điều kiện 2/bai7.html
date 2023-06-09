@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1> PT bậc 2: ax<sup>2</sup> + bx +c= 0</h1>
+<input type="number" id="a" placeholder="nhập a">
+<input type="number" id="b" placeholder="nhập b">
+<input type="number" id="c" placeholder="nhập c">
+<button onclick="result()">Giải pt</button>
+<p id="result"></p>
+</body>
+<script>
+function result(){
+    var a= document.getElementById('a').value;
+    var b= document.getElementById('b').value;
+    var c= document.getElementById('c').value;
+    var d= -c/a ;
+    var denta= b**2 - 4*a*c ;
+    var candenta =Math.sqrt(denta);
+    var x0= -b/(2*a) ;
+    var x1= (-b+ candenta)/(2*a) ;
+    var x2= (-b-candenta)/(2*a)
+    if (a==0 && b==0) {
+        document.getElementById('result').innerText='pt vô số nghiệm'
+    } else if (a==0 && b!=0){
+        document.getElementById('result').innerText='pt có nghiệm là ' +d ;
+
+    } else if (a != 0 && denta <0) {
+        document.getElementById('result').innerText='pt vô nghiệm'
+
+    } else if (a !=0 && denta==0) {
+        document.getElementById('result').innerHTML ='pt có nghiệm kép x<sub>1</sub> = x<sub>2</sub> =    '+ x0
+
+    }else if (a!=0 && denta>0) {
+        document.getElementById('result').innerHTML = 'pt có nghiệm phân biệt x<sub>1</sub> ='  + x1+ ' ;x<sub>2</sub> ='+ x2;
+
+    }
+
+}
+</script>
+</html>

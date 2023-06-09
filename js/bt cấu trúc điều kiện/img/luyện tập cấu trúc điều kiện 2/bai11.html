@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+</body>
+<script>
+  var a = parseInt(prompt('Nhập số tiền lương của bạn / tháng'))
+  if (a > 80) {
+    alert('số tiền thuế phải nộp là  :' + a/100*35 + 'đồng')
+  } else if (a > 52) {
+    alert('số tiền thuế phải nộp là  :' + a/100*30 + 'đồng')
+  } else if (a > 32) {
+    alert('số tiền thuế phải nộp là  :' + a/100*25 + 'đồng')
+  } else if (a > 18) {
+    alert('số tiền thuế phải nộp là  :' + a/100*20 + 'đồng')
+  }     else if (a > 10) {
+    alert('số tiền thuế phải nộp là  :' + a/100*15 + 'đồng')
+  }else if (a >5) {
+    alert('số tiền thuế phải nộp là  :' + a/100* 10+ 'đồng')
+  }else if (a >=0) {
+    alert('số tiền thuế phải nộp là  :' + a/100*5 + 'đồng')
+  }
+</script>
+</html>

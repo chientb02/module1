@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kiểm tra năm nhuận</title>
+</head>
+<body>
+</body>
+<script>
+  var year = prompt('Nhập Năm vào đây')
+  if ( (year % 4 == 0 ) && !(year% 100 == 0 ) ) {
+    alert(' Năm' + year + 'nhuận')
+  } else if ( (year % 100 == 0 ) && (year% 400 == 0 ) ){
+    alert(' Năm' + year + 'nhuận')
+  }else {
+    alert(' Năm' + year + 'không là năm nhuận')
+  }
+</script>
+</html>
