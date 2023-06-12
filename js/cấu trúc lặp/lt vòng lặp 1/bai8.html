@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+</body>
+<script>
+  var a= parseInt(prompt('nhập số đoán trong khoảng:'))
+  var b= Math.floor(Math.random() * a );
+  for ( var i=0 ; i<3 ; ) {
+     var c= parseInt(prompt('nhập số đoán ')) ;
+    if (c > b ) {
+      alert('Số bạn đoán lớn hơn')
+    } else if  (c < b)  {
+      alert('Số bạn đoán lớn hơn')
+    }else {
+      document.write('Bạn đã đoán đúng')
+      break;
+    }
+    i++;
+  }
+  if (i==3){
+    document.write('Bạn đã hết lần đoán')
+
+  }
+</script>
+</html>

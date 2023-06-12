@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+     <title>Document</title>
+    <style>
+        #nut1 {
+            width:50px;
+            height:25px;
+            background-color: #aaa;
+            border-radius: 5px;
+            display:flex;
+
+
+        }
+        #circle {
+            width: 20px;
+            height: 30px;
+            border-radius: 50%;
+            background-color: #dcd8d8;
+
+        }
+        h1{
+            color: #95fc95;
+        }
+    </style>
+</head>
+<body>
+    <div id="nut1">
+        <div id="circle" onclick="bat1()"></div>
+    </div>
+<h1>aaa</h1>
+</body>
+<script>
+    function bat1() {
+        document.getElementById('circle').style.backgroundColor='#95FC95FF' ;
+        document.getElementById('nut1').style.backgroundColor='#4E9F4EFF' ;
+        document.getElementById('nut1').style.justifyContent='end';
+    }
+</script>
+</html>

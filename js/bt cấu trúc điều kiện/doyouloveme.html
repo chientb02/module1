@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Do you love me?</h1>
+<button onclick="yes()">yes</button>
+<button  id="khong">No</button>
+</body>
+<script>
+  function yes(){
+    alert ('<3')
+  }
+  var no=document.getElementById('khong');
+  no.addEventListener('mouseover',mouseover)
+  no.addEventListener('mouseout',mouseout)
+  function mouseover(){
+    document.getElementById('khong').style.marginLeft ='50px';
+  }function mouseout(){
+    document.getElementById('khong').style.marginLeft ='0px';
+  }
+</script>
+</html>
