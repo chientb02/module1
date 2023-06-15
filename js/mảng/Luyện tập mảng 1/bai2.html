@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+</body>
+<script>
+  var array = []
+ var max
+  var dem = 0
+  for (let i = 0; i < 100; i++) {
+    array.push(i)
+  }
+  for (let i = 0; i < array.length; i++) {
+    max =  array[i]
+    if (max < array[i+1]){
+      max = array[i+1]
+      dem= i +1
+    }
+  }
+  document.write( 'giá trị lớn nhất là' + max+ 'và ở vị trí ' + dem  )
+
+</script>
+</html>
