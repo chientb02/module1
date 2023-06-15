@@ -1,10 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Title</title>
 </head>
 <body>
-$END$
+
 </body>
+<script>
+  var a= ''
+  for (let i = 0; i < 9; i++) {
+    if (i<2|| i > 7 || i==5 ) {
+      a += '&nbsp&nbsp&nbsp'
+    } else {
+      a += '+*'
+    }
+  }
+  document.write(a)
+  var st = ''
+  for (let h = 0; h < 9; h++) {
+    st += '<br>'
+    for (let i = 0; i < 9; i++) {
+      if (i >= h) {
+        st += '+*'
+
+      } else {
+        st += '&nbsp&nbsp'
+
+      }
+    }
+  }
+  document.write(st)
+  document.write('<br>')
+
+
+</script>
 </html>

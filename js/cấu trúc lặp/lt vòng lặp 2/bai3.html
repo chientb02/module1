@@ -7,20 +7,67 @@
 <body>
 </body>
 <script>
-  var a= '*'
-  for (i=0 ; i<5 ; i++) {
+    var ai = ''
+    for ( a = 0; a < 5; a++) {
+        ai += '<br>'
+        for ( i = 0; i < 5; i++) {
+            if (i <= a) {
+                ai += '*'
+            } else {
+                ai += '&nbsp&nbsp'
+            }
+        }
+    }
+    document.write(ai)
+    document.write('<br>')
 
-    document.write (a + '<br>')
-    a= a + '*'
-  }
-  document.write ( '<br>')
-  document.write ( '<br>')
+    // ---------------------------------------
+    var st = ''
+    for (let h = 0; h < 5; h++) {
+        st += '<br>'
+        for (let i = 0; i < 5; i++) {
+            if (i >= h) {
+                st += '*'
+            } else {
+               st += ''
 
-  for (let i = 0; i <5 ; i++) {
-      for ( let j=0 ; i > j ; i++) {
-          document.write (a + '<br>')
-          a= a + '*'
-  }}
+            }
+        }
+    }
+    document.write(st)
+    document.write('<br>')
+
+    // -----------------------------
+    var li = ''
+    for ( l = 5; l > 0; l--) {
+        li += '<br>'
+
+        for ( i = 0; i <5; i++) {
+            if (i < l -1) {
+                li += '&nbsp&nbsp'
+
+            } else {
+                li += '*'
+            }
+        }
+    }
+    document.write(li)
+    document.write('<br>')
+
+    // ----------------------------------
+    var ki = ''
+    for (let h = 0; h < 5; h++) {
+        ki += '<br>'
+        for (let i = 0; i < 5; i++) {
+            if (i >= h) {
+                ki+= '*'
+            } else {
+                ki += '&nbsp&nbsp'
+
+            }
+        }
+    }        document.write(ki)
+
 
 </script>
 </html>

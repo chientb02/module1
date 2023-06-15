@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1>Sample Screen :</h1>
+    <input type="text" id="text">
+    <button onclick="them()">Add</button>
+    <button onclick="kiemtra1()">Display</button>
+<p id="result"></p>
+</body>
+<script>
+    var x= 0;
+    var array = Array() ;
+
+    function them(){
+        array[x] = document.getElementById('text').value ;
+        alert('elm' + array[x])
+        x++;
+        document.getElementById("text").value = "";
+
+    }
+
+    function kiemtra1() {
+        let result = '';
+        for (let i =0 ; i< array.length ; i++ ) {
+            result += array[i] + '<br>'
+        } document.getElementById('result').innerHTML = result
+    }
+
+</script>
+</html>

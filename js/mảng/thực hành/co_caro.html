@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+let array = [] ;
+var table= ''
+for (let i= 0 ; i< 5 ; i++) {
+  array[i] = new Array(0 , 0 , 0 , 0 , 0)
+}
+for (let j =0 ; j<5 ; j++) {
+  table += '<br>'
+  for (let i = 0 ; i<5 ; i++) {
+    table += array[i][j] + '&nbsp&nbsp' ;
+  }
+}
+document.write(table)
+</script>
+</html>
