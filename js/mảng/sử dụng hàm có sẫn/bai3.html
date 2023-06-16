@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    var a=prompt('nhập chuỗi')
+    var b= a.split('')
+    var arr1= 'qwertyuiopasdfghjklzxcvbnm'
+    var arr2= 'QWERTYUIOPASDFGHJKLZXCVBNM'
+    var result=[]
+    for (let i = 0; i < b.length; i++) {
+        if(arr1.indexOf(a[i]) !== -1) {
+            result.push(a[i].toUpperCase());
+        } else if (arr2.indexOf(a[i]) !== -1) {
+            result.push(a[i].toLowerCase());
+        }else {
+            result.push(a[i]);
+        }
+    } result= result.join('')
+    document.write(result)
+</script>
+</html>

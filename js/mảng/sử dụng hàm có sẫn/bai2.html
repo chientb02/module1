@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+</body>
+<script>
+var a= prompt(' Nhập dãy số')
+var array=a.split('')
+var b=''
+for (let i = 0; i < array.length; i++) {
+    b+= array[i];
+  if(array[i]%2==0 && array[i+1]%2==0 ) {
+      b+= '-'
+  }
+}
+document.write(b)
+</script>
+</html>

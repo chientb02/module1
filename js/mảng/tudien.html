@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="nhap">
+<button onclick="result()">Dịch</button>
+<p id="result"></p>
+</body>
+<script>
+
+
+    var arr1 = ['mouse', 'phone', 'pen']
+    var arr2 = ['chuột', 'điện thoại', 'bút'];
+    var dem = 0
+
+    function result() {
+        var a = document.getElementById('nhap').value;
+        for (let i = 0; i < arr1.length; i++) {
+            if (a == arr1[i]) {
+                document.getElementById('result').innerHTML = arr2[i];
+                dem++
+                break;
+            }
+        }
+        if (dem == 0) {
+            alert('không tìm thấy')
+        }
+    }
+</script>
+</html>
