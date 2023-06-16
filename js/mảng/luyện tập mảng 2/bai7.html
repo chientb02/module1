@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+  var a = prompt('nhập mảng')
+  var array= a.split('')
+  var b=''
+  for (let i = 0; i < array.length; i++) {
+    if (array[i] === '-'){
+      array[i]= '_'
+
+    }
+    b+=array[i]
+  } document.write(b)
+</script>
+</html>

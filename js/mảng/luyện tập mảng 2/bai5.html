@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+</body>
+<script>
+  var a= prompt('Nhập chuỗi 1');
+  var array1= a.split(' ')
+  var b= prompt('Nhập chuỗi 1');
+  var array2= b.split(' ');
+  var dem = 0
+  for (let i = 0; i < array1.length; i++) {
+      if( array1[i] === array2[i]){
+          dem ++;
+      }else {
+          alert('2 chuỗi khác nhau');
+          break;
+      }
+  }if (dem === array1.length && array1.length===array2.length ){
+      alert('2 chuỗi giống nhau');
+  } else {
+      alert('2 chuỗi khác nhau');
+  }
+</script>
+</html>
