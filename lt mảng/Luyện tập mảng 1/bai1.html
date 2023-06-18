@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+</body>
+<script>
+    var array = []
+    var dem = ''
+    var a = 0
+    for (let i = 0; i < 10; i++) {
+        array.push(i)
+    }
+    for (let i = 0; i < array.length; i++) {
+        if (array[i] % 1 === 0 && array[i] >= 10) {
+            dem += array[i] + ', '
+            a++
+        }
+
+    }
+    if (a === 0) {
+        document.write('Không có số nào là số nguyên lớn hơn 10')
+    } else {
+        document.write('có ' + a + 'là số nguyên lớn hơn bằng 10 và số đó là:' + dem)
+    }
+</script>
+</html>

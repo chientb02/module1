@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+</body>
+<script>
+  var a= prompt('Nhập mảng số nguyên cách nhau bằng dấu cách  (chỉ lấy 10 số đầu tiên)')
+  var b= +prompt('Nhập số V ')
+  var array = a.split(' ',10);
+  var dem= 0
+  var index=0
+  for (let j = 0; j < array.length; j++) {
+    if (array[j] == b) {
+      dem++;
+      index = j
+    }
+  }
+  if (dem != 0) {
+    for (let i = index; i < array.length ; i++) {
+      array[i]= array[i+1] ;
+    }
+  }
+  document.write(array)
+</script>
+</html>

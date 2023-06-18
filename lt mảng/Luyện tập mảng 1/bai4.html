@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>đảo ngược</title>
+</head>
+<body>
+</body>
+<script>
+  var a = prompt('nhập các số cách nhau bằng dấu " "') ;
+  const array = a.split(' ') ;
+  var a = 0
+  var b = array.length -1
+  var c
+ while (a < b ) {
+     c = array[a]
+     array[a]=array[b]
+     array[b]=c
+     a++
+     b--
+  }
+  document.write(array)
+</script>
+</html>

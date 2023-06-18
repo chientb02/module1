@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+</body>
+<script>
+    var array = []
+    var max
+    var dem = 0
+    var sum=0
+    for (var i = 0; i < 4; i++) {
+        array.push(i)
+    }
+    for (let i = 0; i < array.length; i++) {
+        max =  array[i]
+        sum+= array[i]
+        if (max < array[i+1]){
+            max = array[i+1]
+            dem= i +1
+
+        }
+    }
+    document.write( 'giá trị lớn nhất là' + max+ 'và ở vị trí ' + dem +'giá trị trung bình là' + sum/i )
+
+</script>
+</html>

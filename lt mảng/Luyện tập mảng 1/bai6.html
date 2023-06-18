@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+</body>
+<script>
+  var a= prompt('Nhập mảng số nguyên cách nhau bằng dấu cách  (chỉ lấy 10 số đầu tiên)')
+  var b= +prompt('Nhập số V ')
+  var array1 = a.split(' ',10);
+  var dem= 0
+    for (let j = 0; j < array1.length; j++) {
+      if (array1[j] == b) {
+      dem++
+      }
+    }
+if (dem != 0) {
+  document.write('V is in the array')
+} else {
+  document.write('  V is not in the array')
+}
+</script>
+</html>
