@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body onload="display_produce()">
+<p>
+  Add New Product
+</p>
+<div class="input">
+  <input type="text" id="newProduct">
+  <button  onclick="new_Product()">Add</button>
+</div>
+<p>
+    Display All Product
+</p>
+<p id="displayproduce"></p>
+</body>
+<script>
+var arr= ['Sony Xperia','Samsung Galaxy','Nokia 6','Xiaomi Redmi Note 4','Apple iPhone 6S','Xiaomi Mi 5s Plus', 'Apple iPhone 8Plus','Fujitsu F-04E','Oppo A71']
+
+function display_produce () {
+    let produce ='<table>'
+    for (let i = 0; i <arr.length; i++) {
+        produce += ('<tr>' + '<td>'+arr[i]+'</td>'+ '<td > <button onclick="editProduce('+i+')">Edit</button>  </td>'+ '<td><button onclick="deleteProduce('+i+')">Delete</button></td>')
+    } produce += '</table>'
+    document.getElementById('displayproduce').innerHTML= produce
+}
+function new_Product () {
+    let newProduct= document.getElementById('newProduct').value;
+    alert ('đã thêm sản phẩm ' + newProduct )
+    arr.push(newProduct)
+    display_produce()
+}
+function editProduce(index) {
+    edit = prompt('sửa'+ arr[index]+ 'thành');
+    arr[index] = edit;
+    display_produce()
+    alert('sửa thành công')
+}
+function deleteProduce(index) {
+    arr.splice(index,1);
+    display_produce()
+    alert('xóa thành công')
+}
+</script>
+</html>
