@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+  function timmin (number1 , number2 , number3) {
+    if (number1 < number2 && number1 < number3){
+      min = number1
+    }else if (number2< number3) {
+      min = number2
+    }else {
+      min = number3
+    } return min
+  }
+  let number1= +prompt('nhập số')
+  let number2= +prompt('nhập số')
+  let number3= +prompt('nhập số')
+  let result = timmin(number1,number2,number3)
+  console.log('Số nhỏ nhất là:'+ result)
+</script>
+</html>

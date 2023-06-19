@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    arr1 = ['Polaris', 'Aldebaran', 'Deneb', 'Vega', 'Altair', 'Dubhe', 'Regulus'];
+    arr2 = ['Ursa Minor', 'Tarurus', 'Cygnus', 'Lyra', 'Aquila', 'Ursa Major', 'Leo'];
+
+    function compare(name) {
+        let flag = false
+        for (let i = 0; i < arr1.length; i++) {
+            if (inputname === arr1[i]) {
+                alert(arr2[i])
+                flag = true;
+            }
+        }
+        if (!flag) {
+            document.write('Không có chòm sao')
+        }
+    }
+
+    let inputname = prompt('Nhập tên ngôi sao')
+    compare(inputname);
+
+</script>
+</html>

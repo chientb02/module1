@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    let inputArray = prompt('nhập mảng')
+    let arr = inputArray.split(' ')
+    let a = prompt('nhập số bất kì')
+    let dem = 0
+
+    function check(a) {
+        for (let i = 0; i < arr.length; i++) {
+            if (arr[i] === a) {
+                dem++
+            }
+        } return dem
+    }
+    let result = check(a);
+    if (result >0) {
+        alert('Số lần xuất hiện là :'+ result)
+    }else {
+        document.write('-1')
+    }
+</script>
+</html>
