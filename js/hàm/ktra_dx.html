@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+
+    // for (let i = 0; i < arr.length; i++) {
+    //   if (arr[i] !== arr[arr.length - 1 - i]) {
+    //     flag = false
+    //   }
+    // }
+    // if (flag){
+    //   alert('hàm này đx')
+    // }else {
+    //   alert('hàm này không đx')
+    // }
+
+    let inputString = prompt('Nhập chuỗi')
+    let arr = inputString.split('')
+    let flag = true
+    var i = 0
+
+    function isPalindrome(start, end , max) {
+        if (arr[start] === arr[end]) {
+            if (start< max/2) {
+            return isPalindrome(start + 1, end - 1)}
+        } else{
+            return flag = false
+        }
+    }
+    isPalindrome(0, arr.length - 1 ,arr.length)
+    console.log(flag)
+    if (flag) {
+        alert('hàm này đx')
+    } else if (flag == false) {
+        alert('hàm này không đx')
+    }
+</script>
+</html>

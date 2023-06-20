@@ -3,23 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <style>
+
+    </style>
 </head>
 <body onload="display_produce()">
-<p>
+<h1>
   Add New Product
-</p>
+</h1>
 <div class="input">
   <input type="text" id="newProduct">
   <button  onclick="new_Product()">Add</button>
 </div>
 <p>
+<h2>Update product</h2>
+<input type="text" id="textUpdate"> <button onclick="update()" >Update</button>
+<br>
     Display All Product
 </p>
 <p id="displayproduce"></p>
 </body>
 <script>
 var arr= ['Sony Xperia','Samsung Galaxy','Nokia 6','Xiaomi Redmi Note 4','Apple iPhone 6S','Xiaomi Mi 5s Plus', 'Apple iPhone 8Plus','Fujitsu F-04E','Oppo A71']
-
+var a=0
 function display_produce () {
     let produce ='<table>'
     for (let i = 0; i <arr.length; i++) {
@@ -34,15 +40,22 @@ function new_Product () {
     display_produce()
 }
 function editProduce(index) {
-    edit = prompt('sửa'+ arr[index]+ 'thành');
-    arr[index] = edit;
-    display_produce()
-    alert('sửa thành công')
+var inputElement = document.getElementById('textUpdate')
+    inputElement.value= arr[index]
+    a= index
 }
 function deleteProduce(index) {
     arr.splice(index,1);
     display_produce()
     alert('xóa thành công')
 }
+function update() {
+    var upDate = document.getElementById('textUpdate').value ;
+    arr[a]= upDate
+    display_produce()
+    alert('sửa thành công')
+}
+
+
 </script>
 </html>
