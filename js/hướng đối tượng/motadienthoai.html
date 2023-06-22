@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+</body>
+<script>
+    class Mobie {
+        status
+        pin
+        vungnhotinnhan
+        hopthuden
+        tindagui
+        constructor(name,vungnhotinnhan,hopthuden,tindagui) {
+            this.name =name
+            this.pin= 100
+            this.status = false
+            this.vungnhotinnhan = vungnhotinnhan
+            this.hopthuden = hopthuden
+            this.tindagui = tindagui
+        }
+        getName (name){
+            this.name = name
+        }
+        turnOnOff (){
+            if (!this.status){
+                console.log(this.name + 'đang bật')
+            } else {
+                console.log(this.name + 'đang tắt')
+            }
+        }
+        sacPin () {
+            this.pin =100
+        }
+        soanTinnhan(massage) {
+            if(this.status) {
+                this.vungnhotinnhan = this.vungnhotinnhan.push(massage);
+                this.pin -=1
+                console.log(vungnhotinnhan)
+            }else {
+                console.log('bật điện thoại lên trước')
+            }
+        }
+        guiTinnhan(Mobie){
+            if (this.status) {
+                this.tindagui=this.tindagui.concat(this.vungnhotinnhan)
+                mobie.hopthuden= mobie.nhanTinNhan.concat(this.vungnhotinnhan)
+                this.vungnhotinnhan=[]
+            }else {
+                console.log('bật điện thoại lên trước')
+            }
+        }
+        nhanTinnhan (Mobie) {
+            if (this.status) {
+                console.log('tin nhắn đã nhận ')
+                console.log(this.hopthuden)
+            }else {
+                console.log('bật điện thoại lên trước')
+            }
+        }
+
+
+
+
+
+    }
+    let nokia = new Mobie(nokia ,[],[],[])
+    let iphone = new Mobie(iphone ,[],[],[])
+
+</script>
+</html>

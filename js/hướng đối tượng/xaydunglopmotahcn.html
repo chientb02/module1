@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p id="demo"></p> <br>
+<canvas id="canvas" width="200" height="100" style="border:1px solid #000000;">
+</body>
+<script>
+    class Rectangle {
+        width
+        height
+        constructor(width,height) {
+            this.height=height
+            this.width=width
+
+
+        }
+        getDientich(){
+            return   this.height * this.width ;
+        }
+        getChuvi() {
+            return  this.chuvi= (this.height+this.width)*2 ;
+        }
+        setHeight(height) {
+            this.height=height
+        }
+        setWidth(width) {
+            this.width=width
+        }
+    }
+    let hcn = new Rectangle(50,10)
+    let width = hcn.width
+    let height = hcn.height
+    hcn.setWidth(500)
+    hcn.setHeight(100)
+    console.log(hcn.getChuvi()+'----'+hcn.getDientich())
+    document.getElementById('demo').innerHTML = hcn.getChuvi()+'----'+hcn.getDientich()
+    let canvas =document.getElementById("canvas")
+    var context = canvas.getContext("2d");
+    context.fillStyle = "red";
+    context.fillRect(10, 10, width, height)
+
+
+
+</script>
+</html>
